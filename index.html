@@ -1,9 +1,40 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>My's Landing Page</title>
+    <title>Henry's Landing Page</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $.get( "http://api.theysaidso.com/qod.json", function( data ) {
+          alert(JSON.stringify(data));
+        });
+    </script>
+
+    <style type="text/css">
+        body {
+            background-image: url("https://unsplash.it/1280/800/?random");
+            background-size: cover;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
+        .greeting {
+            margin: auto;
+            padding: 100px;
+            text-align: center;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 60px;
+        }
+
+    </style>
+
 </head>
 <body>
-    Hello World!
+
+    <div class="greeting">
+        <h1>Hello Henry</h1>
+    </div>
+    
 </body>
 </html>
