@@ -2,8 +2,6 @@
 
 Create your own landing page. Whenever you open your internet browser you can chose what to show.
 
-## Making a Website
-
 Websites are made of `HTML`, `CSS` and `JavaScript`. You are going to learn about all 3 today.
 
 ### HTML Introduction
