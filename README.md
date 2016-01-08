@@ -80,8 +80,8 @@ To make your greeting more elegant change your `<style></style>` tag to look the
 ```html
 <style type="text/css">
     body {
-        background-color: red;
         font-family: Verdana, Geneva, sans-serif;
+        background-color: red;
     }
     .greeting {
         margin: auto;
@@ -106,6 +106,7 @@ Change your `<style></style>` tag to look the following code
 ```html
 <style type="text/css">
     body {
+        font-family: Verdana, Geneva, sans-serif;
         background-image: url("https://unsplash.it/1280/800/?random");
         background-size: cover;
     }
@@ -118,11 +119,6 @@ Change your `<style></style>` tag to look the following code
 ```
 
 **Reload your page** and have a look how it has changed.
-
-### Weather Widget
-
-<!-- TODO - HENRY Lake -->
-http://www.wunderground.com/stickers/
 
 ### Quote of the Day
 
@@ -148,6 +144,33 @@ Add the following lines to the `<head></head>` tag.
     <h2 id="quote"></h2>
     <h3 id="author"></h3>
 </div>
+```
+
+### Style your page
+
+You have created the basic web page. Now its time to cutomize it for yourself.
+
+```html
+<style type="text/css">
+    body {
+        font-family: Verdana, Geneva, sans-serif;
+        background-image: url("https://unsplash.it/1280/800/?random");
+        background-size: cover;
+    }
+    .greeting {
+        color: blue;
+        font-size: 60px;
+        margin: auto;
+        padding: 100px;
+        text-align: center;
+    }
+    .quote {
+        color: orange;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+</style>
 ```
 
 ## Resources
