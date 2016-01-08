@@ -46,24 +46,49 @@ Change your `<body></body>` tag to look like the following code
 
 ```html
 <body>
-    <div>
+    <div class="greeting">
         <h1>Hello</h1>
     </div>
 </body>
 ```
 
-Now lets make your greeting stylish
+The `class="greeting"` is used in the next section.
 
-```html
-
-```
+Save your work and refresh the broswer page.
 
 ### Adding a Style
 
 Have a look at [this turotial](https://www.codecademy.com/en/skills/make-a-website/topics/css-properties-text/css-intro) to get started with how `CSS` works.
 
-<!-- TODO - HENRY MISKIN -->
-http://webdesign.tutsplus.com/tutorials/web-design-for-kids-css--cms-24116
+Change your `<head></head>` tag to look like the following code 
+
+```html
+<head>
+    <title>My's Landing Page</title>
+    <style type="text/css">
+        body {
+            background-color: red;
+        }
+    </style>
+</head>
+```
+
+Reload the page and have a look how it has changed, this changes the color of the page.
+
+To make your greeting more elegant change your `<style></style>` tag to look the following code
+
+```html
+<style type="text/css">
+    body {
+        background-color: red;
+    }
+    .greeting {
+        margin: auto;
+        padding: 100px;
+        text-align: center;
+    }
+</style>
+```
 
 ### Background Image
 
@@ -76,6 +101,8 @@ https://unsplash.it/1280/800/?random
 http://www.wunderground.com/stickers/
 
 ### Quote of the Day
+
+Add the following lines to the 
 
 <!-- TODO - HENRY Lake -->
 http://api.theysaidso.com/qod.json
