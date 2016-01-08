@@ -54,7 +54,7 @@ Change your `<body></body>` tag to look like the following code
 
 The `class="greeting"` is used in the next section.
 
-Save your work and refresh the broswer page.
+Save your work and **reload your page**, how does your website look?
 
 ### Adding a Style
 
@@ -73,7 +73,7 @@ Change your `<head></head>` tag to look like the following code
 </head>
 ```
 
-Reload the page and have a look how it has changed, this changes the color of the page.
+**Reload your page** and have a look how it has changed, this changes the color of the page.
 
 To make your greeting more elegant change your `<style></style>` tag to look the following code
 
@@ -102,10 +102,29 @@ http://www.wunderground.com/stickers/
 
 ### Quote of the Day
 
-Add the following lines to the 
+We are going to include a quote of the day on your website
 
-<!-- TODO - HENRY Lake -->
-http://api.theysaidso.com/qod.json
+Add the following lines to the `<head></head>` tag.
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $.get( "http://api.theysaidso.com/qod.json", function( data ) {
+        var quotes = data.contents.quotes;
+        $('#quote').html(quotes[0].quote)
+        $('#author').html(quotes[0].author)
+    });
+</script>
+```
+
+Add the following lines to the `<head></head>` tag.
+
+```html
+<div class="quote">
+    <h2 id="quote"></h2>
+    <h3 id="author"></h3>
+</div>
+```
 
 ## Resources
 
