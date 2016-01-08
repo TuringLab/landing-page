@@ -81,6 +81,7 @@ To make your greeting more elegant change your `<style></style>` tag to look the
 <style type="text/css">
     body {
         background-color: red;
+        font-family: Verdana, Geneva, sans-serif;
     }
     .greeting {
         margin: auto;
@@ -92,8 +93,31 @@ To make your greeting more elegant change your `<style></style>` tag to look the
 
 ### Background Image
 
-<!-- TODO - HENRY MISKIN -->
-https://unsplash.it/1280/800/?random
+Red is not a very nice background for your landing page. Lets change that.
+
+Have a look at this link https://unsplash.it/1280/800/?random
+
+Each time you access this link it provides a _random image_.
+
+Try **changing the numbers** and see how the image changes
+
+Change your `<style></style>` tag to look the following code
+
+```html
+<style type="text/css">
+    body {
+        background-image: url("https://unsplash.it/1280/800/?random");
+        background-size: cover;
+    }
+    .greeting {
+        margin: auto;
+        padding: 100px;
+        text-align: center;
+    }
+</style>
+```
+
+**Reload your page** and have a look how it has changed.
 
 ### Weather Widget
 
